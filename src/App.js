@@ -15,3 +15,15 @@ import Resume from './components/resume';
 ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
 )
+
+function App() {
+  return (
+    <div>
+      <Navigation />
+      <About />
+      <Portfolio />
+      <Contact />
+      <Resume />
+    </div>
+  );
+}
