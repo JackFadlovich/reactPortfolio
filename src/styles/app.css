@@ -1,0 +1,44 @@
+body, html {
+    margin: 0;
+    padding: 0; 
+    font-family: Arial, sans-serif;
+    color: rgb(250, 253, 255);
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: black;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: black;
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav li {
+    margin-right: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
