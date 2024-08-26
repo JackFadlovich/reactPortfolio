@@ -1,9 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from '/App';
-
-
 import Navigation from './components/navigation';
 import About from './components/about';
 import Portfolio from './components/portfolio';
