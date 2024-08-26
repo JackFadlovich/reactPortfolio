@@ -1,23 +1,24 @@
-import Navigation from './components/navigation';
-import About from './components/about';
-import Portfolio from './components/portfolio';
-import Contact from './components/contact';
-import Resume from './components/resume';
+import React from 'react';
+import Navigation from '/components/Navigation';
+import About from '/components/About';
+import Portfolio from '/components/Portfolio';
+import Contact from '/components/Contact';
+import Resume from '/components/Resume';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-    <App />
-)
 
 function App() {
-  return (
-    <div>
+    return (
+    <Router>
       <Navigation />
-      <About />
-      <Portfolio />
-      <Contact />
-      <Resume />
-    </div>
+      <Routes>
+        <Route path="/About" element={<About />} />
+        <Route path="/Portfolio" element={<Portfolio />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Resume" element={<Resume />} />
+      </Routes>
+    </Router>
   );
 }
+
+export default App;
