@@ -42,3 +42,8 @@ nav a {
     color: white;
     text-decoration: none;
 }
+
+nav a.active {
+    font-weight: bold;
+    border-bottom: 3px solid rgb(64, 192, 214);
+}
