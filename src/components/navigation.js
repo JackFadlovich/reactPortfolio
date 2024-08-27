@@ -6,16 +6,16 @@ function Navigation() {
     <nav>
       <ul>
         <li>
-          <NavLink to="/about" activeClassName="active">About Me</NavLink>
+          <NavLink to="/about" activeclassname="active">About Me</NavLink>
         </li>
         <li>
-            <NavLink to="/contact" activeClassName="active">Contact</NavLink>
+            <NavLink to="/contact" activeclassname="active">Contact</NavLink>
         </li>
         <li>
-            <NavLink to="/resume" activeClassName="active">Resume</NavLink>
+            <NavLink to="/resume" activeclassname="active">Resume</NavLink>
         </li>
         <li>
-            <NavLink to="/portfolio" activeClassName="active">Portfolio</NavLink>
+            <NavLink to="/portfolio" activeclassname="active">Portfolio</NavLink>
         </li>
       </ul>
     </nav>
