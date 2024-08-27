@@ -5,7 +5,7 @@ import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Header from './components/Header';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
+import './styles/App.css';
 
 
 function App() {
