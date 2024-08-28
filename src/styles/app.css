@@ -13,20 +13,30 @@ body, html {
 }
 
 header {
+    background: repeating-linear-gradient(
+        45deg,
+        #6e7575, /* Color 1 */
+        #000000 50px,
+        #333333 50px,
+        #4e8fad 20px /* Color 2 */
+      );
     background-color: black;
     color: white;
-    padding: 10px;
+    padding: 20px;
     text-align: left;
 }
 
 header h1 {
     margin: 0;
-    font-size: 25px;
+    font-size: 50px;
     flex: 1;
 }
 
 nav {
     background-color: black;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
 }
 
 nav ul {
@@ -57,5 +67,29 @@ form {
   input, textarea {
     display: block;
     margin: 15px 0;
+  }
+  
+
+  .about-container {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+  }
+  
+  .profile-pic {
+    width: 210px; 
+    height: 280px;
+    margin-right: 20px; 
+    margin-top: 40px;
+  }
+  
+  .bio {
+    flex-grow: 1;
+    color: white; 
+    font-size: 20px;
+  }
+  
+  .bio p {
+    margin: 5px; 
   }
   
