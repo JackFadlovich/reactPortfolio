@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import Footer from './Footer';
 function Contact() {
   
     const [formData, setFormData] = useState({
@@ -105,8 +105,10 @@ const validateEmail = (email) => {
             <button type="submit">Submit</button>
           </form>
         </div>
+        
       );
 }
 
+<Footer />
 
 export default Contact;

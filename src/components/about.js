@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Footer from './Footer';
 import "../styles/App.css";
 
 function About() {
@@ -10,12 +10,14 @@ function About() {
              className="profile-pic" />
 
             <div className="bio">
-                <p>According to all known laws of aviation, there is no way a bee should be able to fly.
-                 Its wings are too small to get its fat little body off the ground. 
-                 The bee, of course, flies anyway because bees don't care what humans think is impossible. Yellow, black. Yellow, black. Yellow, black. Yellow, black. 
-                 Ooh, black and yellow! Let's shake it up a little. Barry! Breakfast is ready! Coming! Hang on a second.
-                 Hello? - Barry? - Adam? - Can you believe this is happening? - I can't. I'll pick you up. Looking sharp. Use the stairs. Your father paid good money for those.
-                 Sorry. I'm excited. Here's the graduate. We're very proud of you, son. A perfect report card, all B's.</p>
+                <p>
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+<Footer />
             </div>
         </div>
     );

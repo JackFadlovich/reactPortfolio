@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Footer from './Footer';
 function Portfolio() {
     return (
         <div>
@@ -11,4 +11,5 @@ function Portfolio() {
     )
 }
 
+<Footer />
 export default Portfolio;
