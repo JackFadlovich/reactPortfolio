@@ -1,5 +1,7 @@
 import React from 'react';
 import Footer from './Footer';
+import "../styles/App.css";
+import "../styles/Portfolio.css";
 function Portfolio() {
     return (
       <div className="portfolio-container">

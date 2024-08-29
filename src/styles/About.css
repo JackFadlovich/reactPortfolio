@@ -1,0 +1,22 @@
+.about-container {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+  }
+  
+  .profile-pic {
+    width: 210px; 
+    height: 280px;
+    margin-right: 20px; 
+    margin-top: 40px;
+  }
+  
+  .bio {
+    flex-grow: 1;
+    color: white; 
+    font-size: 20px;
+  }
+  
+  .bio p {
+    margin: 5px; 
+  }

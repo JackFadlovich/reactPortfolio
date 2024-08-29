@@ -1,0 +1,27 @@
+nav {
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav li {
+    margin-right: 20px;
+    margin-left: 150px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a.active {
+    font-weight: bold;
+    border-bottom: 3px solid rgb(64, 192, 214);
+}
