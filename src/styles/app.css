@@ -126,3 +126,28 @@ form {
     text-decoration: none;
   }
   
+
+  .portfolio-section {
+    text-align: center;
+    padding: 25px;
+}
+
+.portfolio-item {
+    display: inline-block;
+    margin: 10px;
+}
+
+.portfolio-item img {
+    width: 200px;
+    height: auto;
+
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item p {
+    margin-top: 50px;
+    font-size: 20px;
+}
