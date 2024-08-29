@@ -20,21 +20,28 @@ header {
         #333333 50px,
         #4e8fad 20px /* Color 2 */
       );
+    display: flex;
     background-color: black;
     color: white;
     padding: 20px;
-    text-align: left;
-    
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header h1 {
     margin: 0;
     font-size: 50px;
-    flex: 1;
+    
 }
 
 nav {
-    background-color: black;
     padding: 20px;
     font-size: 25px;
     text-align: center;
@@ -48,7 +55,8 @@ nav ul {
 }
 
 nav li {
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-left: 150px;
 }
 
 nav a {
@@ -127,27 +135,68 @@ form {
   }
   
 
-  .portfolio-section {
-    text-align: center;
-    padding: 25px;
+  .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
 .portfolio-item {
-    display: inline-block;
-    margin: 10px;
+    width: 300px;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
 }
 
-.portfolio-item img {
-    width: 200px;
-    height: auto;
-
-}
-
-.portfolio-item img:hover {
+.portfolio-item:hover {
     transform: scale(1.05);
 }
 
-.portfolio-item p {
-    margin-top: 50px;
-    font-size: 20px;
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
+
+.portfolio-item h3 {
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+
+.portfolio-item a {
+    display: block;
+    color: #00aaff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.portfolio-item a:hover {
+    text-decoration: underline;
+}
+
+
+.resume-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px;
+  }
+  
+  .column {
+    text-align: center;
+  }
+  
+  .column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .column li {
+    margin: 10px 0;
+  }
+  
+  

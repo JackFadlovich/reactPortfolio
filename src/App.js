@@ -12,7 +12,6 @@ function App() {
   return (
     <Router>
       <Header /> 
-      <Navigation />
       <Routes>
         <Route path="/" element={<About />} />
         <Route path="/about" element={<About />} />

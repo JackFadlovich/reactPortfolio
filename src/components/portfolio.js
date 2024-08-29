@@ -2,14 +2,19 @@ import React from 'react';
 import Footer from './Footer';
 function Portfolio() {
     return (
-        <div className="portfolio-section">
-        <h1>My Projects</h1>
-        <div className="portfolio-item">
-            <a href="https://notetaker-yanp.onrender.com/" target="_blank" rel="noopener noreferrer">
-                <img src={`${process.env.PUBLIC_URL}/Images/Note-Taker-SS.png`} alt="Note Taker" />
-            </a>
-            <p>Note Taker</p>
-        </div>
+      <div className="portfolio-container">
+      <div className="portfolio-item">
+          <img src="Images/Note-Taker-SS.png" alt="Project 1" />
+          <h3>Note Taker</h3>
+          <a href="https://notetaker-yanp.onrender.com" target="_blank" rel="noopener noreferrer">View Deployed App</a>
+          <a href="https://github.com/ZolarEclipse/noteTaker" target="_blank" rel="noopener noreferrer">View GitHub Repo</a>
+      </div>
+      <div className="portfolio-item">
+          <img src="Images/Payroll-Tracker-SS.png" alt="Project 2" />
+          <h3>Payroll Tracker</h3>
+          <a href="https://zolareclipse.github.io/payrollTracker/" target="_blank" rel="noopener noreferrer">View Deployed App</a>
+          <a href="https://github.com/ZolarEclipse/payrollTracker" target="_blank" rel="noopener noreferrer">View GitHub Repo</a>
+      </div>
     </div>
 )
 }
