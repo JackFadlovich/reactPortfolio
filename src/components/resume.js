@@ -1,7 +1,5 @@
 import React from 'react';
 import Footer from './Footer';
-import "../styles/App.css";
-import "../styles/Resume.css";
 function Resume() {
     return (
 <div className="resume-section">

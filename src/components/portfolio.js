@@ -17,9 +17,17 @@ function Portfolio() {
           <a href="https://zolareclipse.github.io/payrollTracker/" target="_blank" rel="noopener noreferrer">View Deployed App</a>
           <a href="https://github.com/ZolarEclipse/payrollTracker" target="_blank" rel="noopener noreferrer">View GitHub Repo</a>
       </div>
+      <div className="portfolio-item">
+            <img src="Images/Weather-Dashboard-SS.png" alt="Project 3" />
+            <h3>Weather Dashboard</h3>
+            <a href="https://zolareclipse.github.io/weatherDashboard/" target="_blank" rel="noopener noreferrer">View Deployed App</a>
+            <a href="https://github.com/ZolarEclipse/weatherDashboard" target="_blank" rel="noopener noreferrer">View GitHub Repo</a>
+        </div>
+      <Footer />
     </div>
+    
 )
 }
 
-<Footer />
+
 export default Portfolio;

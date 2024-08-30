@@ -111,6 +111,6 @@ const validateEmail = (email) => {
       );
 }
 
-<Footer />
+
 
 export default Contact;
