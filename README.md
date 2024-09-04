@@ -8,36 +8,6 @@ AS AN employer looking for candidates with experience building single-page appli
 I WANT to view a potential employee's deployed React portfolio of work samples
 SO THAT I can assess whether they're a good candidate for an open position
 
-React portfolio has
-
-public (folder)
-src (folder)
-package-lock.json
-package.json
-README.md
-
-in public there is one file called index.js
-
-in src there are the following files
-
-components (folder)
-styles (folder)
-App.js
-index.js
-
-in components there are the following files
-
-About.js
-Contact.js
-Header.js
-Navigation.js
-Portfolio.js
-Resume.js
-
-in the styles folder there is one file called App.css
-
-I will share what is in the files now
-
 Acceptance Criteria
 
 GIVEN a single-page application portfolio for a web developer
