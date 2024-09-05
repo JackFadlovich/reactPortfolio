@@ -1,0 +1,42 @@
+body, html {
+    margin: 0;
+    padding: 0; 
+    font-family: Arial, sans-serif;
+    color: rgb(250, 253, 255);
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: black;
+}
+
+header {
+  background: repeating-linear-gradient(
+      45deg,
+      #6e7575, /* Color 1 */
+      #000000 50px,
+      #333333 50px,
+      #4e8fad 20px /* Color 2 */
+    );
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 50px;
+  
+}
