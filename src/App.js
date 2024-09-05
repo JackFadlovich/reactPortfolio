@@ -1,5 +1,4 @@
-import Navigation from './components/Navigation';
-//import 'src/';
+import './styles/App.css';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
