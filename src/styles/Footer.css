@@ -3,8 +3,10 @@ footer {
     color: white;
     padding: 25px;
     text-align: center;
-    position: relative;
+    position: fixed;
     bottom: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     font-size: 25px;
   }
@@ -19,7 +21,7 @@ footer {
   }
   
   .footer-content p {
-    margin: 0;
+    margin: 10px;
   }
   
   .social-links {
@@ -27,7 +29,7 @@ footer {
   }
   
   .social-links a {
-    margin: 0 10px;
+    margin: 40px;
     color: rgb(102, 146, 223);
     text-decoration: none;
   }

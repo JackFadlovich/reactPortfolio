@@ -12,7 +12,7 @@ function Portfolio() {
           <a href="https://github.com/ZolarEclipse/noteTaker" target="_blank" rel="noopener noreferrer">View GitHub Repo</a>
       </div>
       <div className="portfolio-item">
-          <img src="Images/Payroll-Tracker-SS.png" alt="Project 2" />
+          <img src="Images\Screenshot 2024-09-05 125051.png" alt="Project 2" />
           <h3>Payroll Tracker</h3>
           <a href="https://zolareclipse.github.io/payrollTracker/" target="_blank" rel="noopener noreferrer">View Deployed App</a>
           <a href="https://github.com/ZolarEclipse/payrollTracker" target="_blank" rel="noopener noreferrer">View GitHub Repo</a>

@@ -1,11 +1,12 @@
 import Navigation from './components/Navigation';
+//import 'src/';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Header from './components/Header';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './styles/App.css';
+
 
 
 function App() {
@@ -22,5 +23,7 @@ function App() {
     </Router>
   );
 }
+
+
 
 export default App;

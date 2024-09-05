@@ -1,5 +1,6 @@
 import React from 'react';
 import Footer from './Footer';
+import '../styles/Resume.css';
 function Resume() {
     return (
 <div className="resume-section">
@@ -23,6 +24,7 @@ function Resume() {
           <li>MongoDB</li>
         </ul>
       </div>
+      <Footer />
     </div>
 
     );

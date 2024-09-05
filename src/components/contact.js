@@ -106,6 +106,7 @@ const validateEmail = (email) => {
             </div>
             <button type="submit">Submit</button>
           </form>
+          <Footer />
         </div>
         
       );
