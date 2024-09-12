@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from './Footer';
 import "../styles/App.css";
-import "../styles/About.css";
+import "../styles/about.css";
 
 function About() {
     return (
