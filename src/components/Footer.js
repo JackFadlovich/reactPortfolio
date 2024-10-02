@@ -6,7 +6,7 @@ function Footer() {
     <footer>
       <div className="footer-content">
         <div className="social-links">
-          <a href="https://github.com/ZolarEclipse" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://github.com/JackFadlovich?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/in/jack-f-968914326/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>
@@ -15,4 +15,3 @@ function Footer() {
 }
 
 export default Footer;
-//test

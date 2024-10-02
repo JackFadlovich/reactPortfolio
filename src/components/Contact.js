@@ -115,4 +115,3 @@ const validateEmail = (email) => {
 
 
 export default Contact;
-//test

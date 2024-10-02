@@ -1,5 +1,4 @@
-A portfolio for myself using React (work in progress)
-
+Deployed application: https://66e332b6c19b060f2778a9df--mernbookssearch.netlify.app/
 
 
 User Story

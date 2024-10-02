@@ -33,4 +33,3 @@ function Resume() {
 <Footer />
 export default Resume;
 
-//testing
