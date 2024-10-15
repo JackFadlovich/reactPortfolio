@@ -13,10 +13,9 @@ function About() {
             <div className="bio">
                 <p>
 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                I am a web developer with 3 years of coding experience, specializing in JavaScript and React. I recently completed a Web Development bootcamp at Washington University, where I honed my skills in building responsive and interactive web applications. Throughout my internship, I worked on a collaborative team to develop a web application, gaining valuable experience in both front-end and back-end development with technologies like React, Node.js, and MongoDB.
+
+I thrive in team environments and enjoy the process of collaborating with others to bring ideas to life. As I continue to grow in my career, I'm excited to apply my skills and contribute to projects that challenge me to think critically and creatively.
 </p>
 <Footer />
             </div>
