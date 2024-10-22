@@ -1,47 +1,52 @@
-Deployed application: https://66e332b6c19b060f2778a9df--mernbookssearch.netlify.app/
+# React Portfolio
 
+## Table of Contents
 
-User Story
+- [Description](#description)
+- [Features](#features)
+- [Demo](#demo)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-AS AN employer looking for candidates with experience building single-page applications
-I WANT to view a potential employee's deployed React portfolio of work samples
-SO THAT I can assess whether they're a good candidate for an open position
+## Description
 
-Acceptance Criteria
+This is a portfolio website built with React to showcase my work as a web developer. The portfolio includes projects, skills, and a contact form, providing potential employers or clients with an overview of my abilities and experience. It is fully responsive and features an intuitive, polished UI to offer an engaging user experience.
 
-GIVEN a single-page application portfolio for a web developer
-WHEN I load the portfolio
-THEN I am presented with a page containing a header, a section for content, and a footer
+## Features
 
-WHEN I view the header
-THEN I am presented with the developer's name and navigation with titles corresponding to different sections of the portfolio
+- Fully responsive design
+- Showcases multiple projects with descriptions and links to live demos and GitHub repositories
+- Includes a detailed about section with skills and education
+- Contact form for inquiries
+- Uses React Router for seamless navigation between pages
+- Modern, clean design
 
-WHEN I view the navigation titles
-THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
+## Demo
 
-WHEN I click on a navigation title
-THEN I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted
+[Live Demo](https://66e332b6c19b060f2778a9df--mernbookssearch.netlify.app/)
 
-WHEN I load the portfolio the first time
-THEN the About Me title and section are selected by default
+## Technologies Used
 
-WHEN I am presented with the About Me section
-THEN I see a recent photo or avatar of the developer and a short bio about them
+- **Frontend:** React, JavaScript, HTML, CSS
+- **Routing:** React Router
+- **Styling:** CSS (or mention any styling library if used like Tailwind, Bootstrap)
+- **Deployment:** [Netlify](https://www.netlify.com/)
 
-WHEN I am presented with the Portfolio section
-THEN I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repository
+## Installation
 
-WHEN I am presented with the Contact section
-THEN I see a contact form with fields for a name, an email address, and a message
+To get a local copy up and running, follow these steps.
 
-WHEN I move my cursor out of one of the form fields without entering text
-THEN I receive a notification that this field is required
+### Prerequisites
 
-WHEN I enter text into the email address field
-THEN I receive a notification if I have entered an invalid email address
+Make sure you have [Node.js](https://nodejs.org/en/) and npm installed on your machine.
 
-WHEN I am presented with the Resume section
-THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
+### Installation Steps
 
-WHEN I view the footer
-THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/JackFadlovich/reactPortfolio.git
