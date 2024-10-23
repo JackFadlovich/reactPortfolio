@@ -12,6 +12,7 @@ function About() {
 
             <div className="bio">
                 <p>
+                    
 
                 I am a web developer with 3 years of coding experience, specializing in JavaScript and React. I recently completed a Web Development bootcamp at Washington University, where I honed my skills in building responsive and interactive web applications. Throughout my internship, I worked on a collaborative team to develop a web application, gaining valuable experience in both front-end and back-end development with technologies like React, Node.js, and MongoDB.
 
