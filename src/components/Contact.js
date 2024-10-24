@@ -45,8 +45,8 @@ function Contact() {
     e.preventDefault();
 
     emailjs.sendForm(
-      'service_ha44ke',   // Replace with your EmailJS service ID
-      'template_9ce1lgk',  // Replace with your EmailJS template ID
+      'service_gptl5ay',   // Replace with your EmailJS service ID
+      'template_lino2tu',  // Replace with your EmailJS template ID
       e.target,
       'rWWLnww5Wz7FyXcxL'       // Replace with your EmailJS user ID
     ).then((result) => {
