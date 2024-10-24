@@ -28,7 +28,7 @@ This is a portfolio website built with React to showcase my work as a web develo
 
 ## Demo
 
-[Live Demo](https://mernbookssearch.netlify.app/)
+[Live Demo](https://jackfportfolio.netlify.app/)
 
 ## Technologies Used
 
