@@ -1,20 +1,40 @@
 .resume-container {
-    display: flex;
-    justify-content: space-around;
-    margin: 25px;
-  }
-  
-  .column {
-    text-align: center;
-  }
-  
-  .column ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .column li {
-    margin: 10px 0;
-  }
-  
-  
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.resume-content {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+  color: #ffffff;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: disc;
+  margin: 0;
+  padding-left: 20px;
+}
+
+p span.dates, p span.location {
+  font-style: italic;
+  font-size: 0.9em;
+  color: #ffffff;
+}

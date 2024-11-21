@@ -1,23 +1,18 @@
-import React, { useState } from 'react';
-import Footer from './Footer';
-import emailjs from 'emailjs-com';
-import "../styles/App.css";
+import React, { useState } from "react";
 import "../styles/Contact.css";
 
 function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
+
   const [errors, setErrors] = useState({});
-  const [emailStatus, setEmailStatus] = useState('');
+  const [emailStatus, setEmailStatus] = useState("");
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const validateEmail = (email) => {
@@ -27,102 +22,84 @@ function Contact() {
 
   const handleBlur = (e) => {
     const { name, value } = e.target;
-    let newErrors = { ...errors };
+    const newErrors = { ...errors };
 
     if (!value) {
-      newErrors[name] = `${name} is required`;
+      newErrors[name] = `${name} is required.`;
+    } else if (name === "email" && !validateEmail(value)) {
+      newErrors.email = "Invalid email address.";
     } else {
       delete newErrors[name];
-      if (name === 'email' && !validateEmail(value)) {
-        newErrors.email = 'Please enter a valid email address';
-      }
     }
 
     setErrors(newErrors);
   };
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm(
-      'service_gptl5ay',   // Replace with your EmailJS service ID
-      'template_lino2tu',  // Replace with your EmailJS template ID
-      e.target,
-      'rWWLnww5Wz7FyXcxL'       // Replace with your EmailJS user ID
-    ).then((result) => {
-      console.log(result.text);
-      setEmailStatus('Email sent successfully!');
-    }).catch((error) => {
-      console.log(error.text);
-      setEmailStatus('Failed to send email.');
-    });
-
-    setFormData({
-      name: '',
-      email: '',
-      message: '',
-    });
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    let formErrors = {};
-    if (!formData.name) formErrors.name = 'Name is required';
-    if (!formData.email) formErrors.email = 'Email is required';
-    if (!validateEmail(formData.email)) formErrors.email = 'Invalid email address';
-    if (!formData.message) formErrors.message = 'Message is required';
+    const formErrors = {};
+    if (!formData.name) formErrors.name = "Name is required.";
+    if (!formData.email) formErrors.email = "Email is required.";
+    if (!validateEmail(formData.email)) formErrors.email = "Invalid email address.";
+    if (!formData.message) formErrors.message = "Message is required.";
 
     setErrors(formErrors);
 
     if (Object.keys(formErrors).length === 0) {
-      sendEmail(e);
+      setEmailStatus("Email sent successfully!");
+      setFormData({ name: "", email: "", message: "" });
+    } else {
+      setEmailStatus("Please correct the errors.");
     }
   };
 
   return (
-    <div>
-      <h1>Contact</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            onBlur={handleBlur}
-          />
-          {errors.name && <span className="error">{errors.name}</span>}
+    <div className="contact-container">
+      <h1>Contact Me</h1>
+      <form onSubmit={handleSubmit} className="contact-form">
+        <div className="form-row">
+          <div className="form-box">
+            <label htmlFor="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              onBlur={handleBlur}
+            />
+            {errors.name && <span className="error">{errors.name}</span>}
+          </div>
+          <div className="form-box">
+            <label htmlFor="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              onBlur={handleBlur}
+            />
+            {errors.email && <span className="error">{errors.email}</span>}
+          </div>
         </div>
-        <div>
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            onBlur={handleBlur}
-          />
-          {errors.email && <span className="error">{errors.email}</span>}
+        <div className="form-row">
+          <div className="form-box wide">
+            <label htmlFor="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              onBlur={handleBlur}
+            />
+            {errors.message && <span className="error">{errors.message}</span>}
+          </div>
         </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            onBlur={handleBlur}
-          />
-          {errors.message && <span className="error">{errors.message}</span>}
-        </div>
-        <button type="submit">Submit</button>
+        <button type="submit" className="submit-btn">Submit</button>
       </form>
-      {emailStatus && <p>{emailStatus}</p>}
-      <Footer />
+      {emailStatus && <p className="email-status">{emailStatus}</p>}
     </div>
   );
 }
